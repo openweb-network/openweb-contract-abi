@@ -86,6 +86,25 @@
 		"constant": false,
 		"inputs": [
 			{
+				"name": "_domain",
+				"type": "string"
+			}
+		],
+		"name": "cancelSellDomain",
+		"outputs": [
+			{
+				"name": "_status",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
 				"name": "_year",
 				"type": "uint256"
 			},
@@ -114,20 +133,6 @@
 		],
 		"name": "claimStakeTokens",
 		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [],
-		"name": "deListHost",
-		"outputs": [
-			{
-				"name": "_status",
-				"type": "bool"
-			}
-		],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -354,6 +359,20 @@
 				"type": "bool"
 			}
 		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_address",
+				"type": "address"
+			}
+		],
+		"name": "setOwOwner",
+		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
